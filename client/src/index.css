@@ -1,0 +1,107 @@
+
+/* Import Tailwind CSS v3 layers. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global document styling */
+:root {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900;
+  min-width: 320px;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Form label styling */
+label {
+  @apply block text-sm font-medium text-slate-700;
+}
+
+/* General input styling */
+input:not([type="file"]) {
+  @apply block w-full mt-2 px-4 py-3
+    border border-slate-300 rounded-lg
+    bg-white text-slate-900
+    outline-none transition;
+}
+
+/* Focus states */
+input:not([type="file"]):focus {
+  @apply border-indigo-500 ring-2
+    ring-indigo-100;
+}
+
+/* File upload input */
+input[type="file"] {
+  @apply block w-full text-sm text-slate-600
+    border border-dashed border-slate-300
+    rounded-lg p-4 bg-slate-50;
+}
+
+/* Reusable cards */
+.card {
+  @apply bg-white rounded-xl border
+    border-slate-200 shadow-sm p-5
+    sm:p-6;
+}
+
+/* Primary buttons */
+.btn {
+  @apply inline-flex items-center justify-center
+    px-5 py-3 bg-indigo-600 text-white
+    text-sm font-semibold rounded-lg
+    hover:bg-indigo-700 transition-colors;
+}
+
+/* Disabled buttons */
+.btn:disabled {
+  @apply bg-indigo-300 cursor-not-allowed;
+}
+
+/* Secondary action buttons */
+.action-btn {
+  @apply inline-flex items-center justify-center
+    gap-2 border border-slate-300
+    rounded-lg px-3 py-2
+    text-sm font-medium
+    hover:bg-slate-100
+    transition-colors;
+}
+
+/* Error messages */
+.error {
+  @apply text-red-700;
+}
+
+/* Links */
+a {
+  transition: color 0.2s ease;
+}
+
+/* Improve mobile sizing */
+@media (max-width: 640px) {
+  .card {
+    padding: 1rem;
+  }
+
+  h1 {
+    line-height: 1.2;
+  }
+}
+
+/* Visible keyboard focus */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #4f46e5;
+  outline-offset: 3px;
+}
