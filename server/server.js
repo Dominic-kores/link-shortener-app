@@ -19,7 +19,7 @@ const app = express();
 
 // Frontend origins allowed to make API requests.
 const allowed = (
-  process.env.CLIENT_URL || "http://localhost:5173"
+  process.env.CLIENT_URL || "http://localhost:5173" || "https://link-shortener-app-theta.vercel.app"
 )
   .split(",")
   .map((value) => value.trim());

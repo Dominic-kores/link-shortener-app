@@ -3,7 +3,7 @@
 
 A full-stack URL shortening application built with **React, Node.js, Express, PostgreSQL, and Prisma ORM**. Linkly allows users to convert long URLs into short, shareable links, generate QR codes, and monitor link performance through an analytics dashboard.
 
-## 🎯 Project Objectives
+## Project Objectives
 
 - Build a secure full-stack application using RESTful APIs.
 - Implement user authentication with JWT and bcrypt.
@@ -13,7 +13,7 @@ A full-stack URL shortening application built with **React, Node.js, Express, Po
 - Integrate PostgreSQL using Prisma ORM.
 - Deploy the frontend and backend to cloud platforms.
 
-## ✨ Key Features
+##  Key Features
 
 - **User Authentication:** Secure registration, login, and protected routes.
 - **URL Shortening:** Generate unique, shareable short links.
@@ -25,7 +25,7 @@ A full-stack URL shortening application built with **React, Node.js, Express, Po
 - **Bulk Creation:** Upload multiple URLs through CSV files.
 - **Responsive Design:** Accessible on desktop and mobile devices.
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Frontend | Backend | Database & Tools |
 |---|---|---|
@@ -35,7 +35,7 @@ A full-stack URL shortening application built with **React, Node.js, Express, Po
 | Axios | nanoid | Thunder Client |
 | Recharts | QRCode | Railway & Vercel |
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 link-shortener/
@@ -61,12 +61,12 @@ link-shortener/
 └── README.md
 ```
 
-## 🚀 Installation and Setup
+## Installation and Setup
 
 **1. Clone the repository**
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/Dominic-kores/link-shortener-app
 cd link-shortener
 ```
 
@@ -118,7 +118,7 @@ npm run dev
 
 Open **http://localhost:5173** in your browser.
 
-## 🔗 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -133,22 +133,22 @@ Open **http://localhost:5173** in your browser.
 | GET | `/:shortCode` | Redirect to original URL |
 
 ---
-## 🌐 Live Deployment
+## Live Deployment
 
-- **Frontend (Vercel):** Add your deployed frontend URL
-- **Backend (Railway):** Add your deployed backend URL
-- **GitHub Repository:** Add your GitHub repository URL
+- **Frontend (Vercel):** https://link-shortener-app-theta.vercel.app
+- **Backend (Railway):** https://link-shortener-app-production.up.railway.app
 
-*Note: Localhost URLs and QR codes are only accessible within the relevant local development environment. Public QR links require a publicly accessible backend.*
 
-## 📚 Learning Outcomes
+## Learning Outcomes
 
 This project strengthened my practical understanding of full-stack development, database relationships, REST APIs, secure authentication, URL redirection, asynchronous click tracking, and frontend-backend integration.
 
 
 
 ---
-## 👨‍💻 Author
+
+##  Author
 
 **Dominic Kores Kisioya**  
+
 Full-Stack Software & AI Engineer
